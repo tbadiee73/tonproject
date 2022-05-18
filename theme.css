@@ -1,4 +1,5 @@
 body {
+
   --background_light_main: #f7f9fb;
   --background_light_gradient: linear-gradient(180deg,#f7f9fb,rgba(238,242,245,0.8) 116.16%);
   --background_light_icon: rgba(0,136,204,0.06);
@@ -40,4 +41,5 @@ body {
   --covers_light_green: #caefd9;
   --hovered_link: #08c;
   --max-width:1170px;
+  
 }

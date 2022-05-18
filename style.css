@@ -197,9 +197,13 @@ div.items{
    padding: 25px;
 }
 .transicon{
-   
+  
+  
+  position: relative;
+  
     }
 .wallicon{
+
     position: relative;
 bottom: 35px;
 left: 240px;
