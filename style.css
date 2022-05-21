@@ -161,57 +161,63 @@ div.description{
   text-align: center;
     color:var(  --text_light_secondary) ;
     padding-bottom:55px ;
-  margin: 0 250px;
+  margin: 0 45%px;
   font-size: larger;
 }
 div.items{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    align-items: center;
    
 }
 .transactions{
-   display: block;
-    width: 32%;
-    background-color:var(  --background_light_main);
-   border-radius: 25px;
-   padding: 25px;
+ overflow: hidden;
+ position: relative;
+ width: 31%;
+ background-color:var(  --background_light_main);
+ border-radius: 24px;
+ padding: 24px;
 
 }
 
 .wallets{
-    display: block;
-    width: 31%;
-    background-color:var(  --background_light_main);
-   margin-left:3%;
-   border-radius: 25px;
-   padding: 25px;
+    overflow: hidden;
+    position: relative;
+       width: 31%;
+       background-color:var(  --background_light_main);
+      border-radius: 24px;
+      padding: 24px;
 }
 .validators{
-    display: block;
-    width: 31%;
-    background-color:var(  --background_light_main);
-   margin-left: 3%;
-   border-radius:25px;
-   padding: 25px;
+    overflow: hidden;
+    position: relative;
+       width: 31%;
+       background-color:var(  --background_light_main);
+      border-radius: 24px;
+      padding: 24px;
 }
 .transicon{
   
+  position: absolute;
+  top: 50%;
+  right:24px;
+  transform: translate(50%, -50%);
   
-  position: relative;
-  
+
     }
 .wallicon{
 
-    position: relative;
-bottom: 35px;
-left: 240px;
+    position: absolute;
+    top: 50%;
+    right:24px;
+    transform: translate(50%, -50%);
 }
 .validicon{
-    position: relative;
-bottom: 35px;
-left: 270px;
+    position: absolute;
+    top: 50%;
+    right:24px;
+    transform: translate(50%, -50%);
 }
 .coinbox{
     width: 90%;
@@ -279,3 +285,191 @@ font-weight: 1000;
     font-size: xx-large;
     font-weight: 800;
 }
+.timeine{
+    padding: 100px 0px;
+}
+.Blockchain{
+    padding-bottom: 100px;
+}
+.timeline-title{
+    display: block;
+    font-size: 55px;
+    font-weight: 800;
+}
+.timeline-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.yearnumber{
+  width: 31%;
+  font-weight:800;
+  font-size: x-large;
+  border-top: 2px solid red;
+}
+.yeardesc{
+    font-weight: normal;
+    font-size: large;
+    color: var( --text_light_secondary);
+    line-height: 30px;
+}
+.blockdesc{
+    text-align: center;
+    color:var(  --text_light_secondary) ;
+    padding-bottom:40px ;
+  font-size: larger;
+}
+.roadmap{
+    color: var(--icon_light_primary);
+    font-size: large;
+    display: inline-flex;
+}
+.roadmap:hover{
+    color: var( --button_dark_primary_hover) ;
+}
+
+ .more{
+ background-color:var(--button_dark_primary);
+display: flex;
+justify-content: space-around;
+ margin: 0px 42%;
+ }
+ .more:hover{
+    background-color:var( --button_dark_primary_hover) ;
+}
+.more:focus{
+    background-color: var( --button_dark_primary_pressed);
+}
+.blockchin-analysis{
+    width: 100%;
+    height:700px;
+    border: 1px solid  rgba(123,148,160,0.2);
+    border-radius: 45px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.analysis{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+}
+.column1{
+    margin-top: 70px;
+align-items: flex-start;
+}
+.column2{
+    background-color: aqua;
+    border-radius:40px;
+    margin:16px 0 ;
+}
+.collink{
+    color: black;
+}
+.collink:hover{
+    color:var( --button_dark_primary_hover);
+}
+.blockchine-footr{
+    display: block;
+    padding: 0 72px;
+    color: rgb(114, 138, 150);
+    text-align: center;
+}
+.footlink{
+    text-decoration: underline;
+    color:rgb(114, 138, 150) ;
+}
+.footlink:hover{
+    color: var( --button_dark_primary_hover);
+}
+ .developers{
+     height: 900px;
+     background-color: var(--background_dark_main);
+ }
+ .blockchahindev{
+     padding: 72px 0;
+ }
+ .devtitle{
+     color: var(  --background_light_main);
+ }
+ .devdesc{
+     color: #ffffffb3;
+     margin: 0 24%;
+ }
+ .button2{
+     display: flex;
+     justify-content: center;
+ }
+ .Community{
+ width: 100%;
+ display: flex;
+ padding: 72px 0;
+ }
+ .desccommunity{
+     width: 55%;
+ }
+
+.teltwitt{
+    display: inline-flex;
+    color: rgb(0, 136, 204);
+    font-weight: 800;
+    margin: 40px 12px 0;
+    font-size: large;
+}
+.teltwitt:hover{
+    color:  var( --button_dark_primary_hover);
+}
+ .imgcommunity{
+     width: 45%;
+ }
+ .s4-main{
+     padding-top: 72px;
+     padding-bottom: 120px;
+ }
+ .apps{
+     margin: 0 40%;
+ }
+ .appsdesc{
+      text-align: center;
+ color:var(  --text_light_secondary) ;
+font-size: larger;
+margin: 0 20%;
+padding-bottom: 42px;
+ }
+ .s5{
+     padding:140px 0;
+ }
+ .chanceslist{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .startmining{
+     display: flex;
+     flex-direction: column;
+ }
+ /*not over*/
+ .chanceslist-img{
+     border-radius: 32px;
+ }
+ .chanceslist-img:hover{
+     width: 350px;
+     height: 190px;
+ }
+ .chanceslist-title{
+     font-weight: 800;
+     font-size: larger;
+     color: black;
+ }
+ .chanceslist-desc{
+     color: var( --text_light_secondary);
+     font-size: large;
+ }
+ .roadmap{
+     fo
+ }
