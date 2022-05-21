@@ -364,7 +364,7 @@ justify-content: space-around;
 align-items: flex-start;
 }
 .column2{
-    background-color: aqua;
+    background-color:  var(  --background_light_main);
     border-radius:40px;
     margin:16px 0 ;
 }
