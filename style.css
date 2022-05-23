@@ -18,7 +18,8 @@
             margin: auto;
           
         }
-
+       /*header*/
+       
         .header{
             display: block;
             background:linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
@@ -34,11 +35,8 @@
         .header:hover{
             color:var( --button_light_secondary) ;
         }
+/*navigation bar*/
 
-.hero{
-    background-color: var(--background_dark_main);
-    color: var(--background_light_main);
-}
 nav .container{
     display: flex;
     justify-content: space-between; 
@@ -61,6 +59,12 @@ nav{
     justify-content: space-between;
     width: 40%;
 
+}
+/*welcome & video*/
+
+.hero{
+    background-color: var(--background_dark_main);
+    color: var(--background_light_main);
 }
 .source a{
     color: var(--background_light_main);
@@ -98,7 +102,6 @@ nav{
  .details .video{
      width: 30%;
  }
-
  
  .details p{
      color: #ffffffb3;
@@ -145,7 +148,7 @@ margin-left: 16px;
     }
   }
 
-
+/*mass adoption*/
 
 .main.container{
     padding: 150px 0px;
@@ -220,6 +223,8 @@ div.items{
     right:24px;
     transform: translate(50%, -50%);
 }
+/*ton coin*/
+
 .coinbox{
     width: 90%;
     background-color:var(  --background_light_main);
@@ -276,6 +281,9 @@ font-weight: 1000;
   position: relative;
   top:8px;
 }
+
+/*timeline*/
+
 .itemtext{
    padding-bottom: 30px;
    font-weight:550;
@@ -283,8 +291,9 @@ font-weight: 1000;
 .itemnumbers{
     font-size: xx-large;
     font-weight: 800;
-}
-.timeine{
+} 
+
+.timeline{
     padding: 100px 0px;
 }
 .Blockchain{
@@ -299,17 +308,54 @@ font-weight: 1000;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
 
+.timeline-items::before{
+    display: block;
+    width: 66.66%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.timeline-items::after{
+    display: block;
+    width: 48%;
+    
+    border-top: 3px dashed red;
+    position: absolute;
+    top: 0;
+    left: 66.66%;
+    content: "";
 }
 .yearnumber{
-  width: 33.33%;
-  font-weight:800;
-  font-size: x-large;
-  border-top: 2px solid red;
-}
-.year2022{
-    border-top: 2px dashed red;
-}
+    width: 33.33%;
+    font-weight:800;
+    font-size:larger;
+    position: relative;
+   
+  }
+  .yearnumber::before{
+      display: block;
+      content: "";
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: green;
+   transform: translateY(-50%);
+  }
+  .bigdot::before{
+      z-index: 1;
+    width: 8px;
+    height: 8px;
+      background-color: var(--background_light_main);
+      border:8px solid purple ;
+      border-radius: 50%;
+  }
+
 .yeardesc{
     font-weight: normal;
     font-size: large;
@@ -330,6 +376,7 @@ font-weight: 1000;
 .roadmap:hover{
     color: var( --button_dark_primary_hover) ;
 }
+/*blockchain analysis*/
 
  .more{
  background-color:var(--button_dark_primary);
@@ -388,6 +435,8 @@ align-items: flex-start;
 .footlink:hover{
     color: var( --button_dark_primary_hover);
 }
+/*A blockchain for developers*/
+
  .developers{
      background-color: var(--background_dark_main);
  }
@@ -405,10 +454,14 @@ align-items: flex-start;
      display: flex;
      justify-content: center;
  }
+
+ 
+/*TON Community*/
+
  .Community{
  width: 100%;
  display: flex;
- padding: 72px 0;
+ padding: 64px 0;
  }
  .desccommunity{
      width: 55%;
@@ -427,6 +480,9 @@ align-items: flex-start;
  .imgcommunity{
      width: 45%;
  }
+
+ /*Apps & Services*/
+
  .s4-main{
      padding-top: 72px;
      padding-bottom: 120px;
@@ -441,6 +497,9 @@ font-size: larger;
 margin: 0 20%;
 padding-bottom: 42px;
  }
+
+ /*Everyone can participate*/
+
  .s5{
      padding:140px 0;
  }
