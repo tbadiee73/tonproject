@@ -19,7 +19,6 @@
           
         }
        /*header*/
-       
         .header{
             display: block;
             background:linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
@@ -392,7 +391,7 @@ justify-content: space-around;
 }
 .blockchin-analysis{
     width: 100%;
-    border: 2px solid  rgba(123,148,160,0.2);
+    border: 2px solid var(  --separator_light);
     border-radius: 45px;
     margin-top: 48px;
     margin-bottom: 24px;
@@ -453,7 +452,40 @@ align-items: flex-start;
  .button2{
      display: flex;
      justify-content: center;
+     padding-bottom: 58px;
  }
+ .header_box{
+     width: 90%;
+     padding: 24px 40px;
+     background-color: rgb(41, 41, 46);
+     margin: auto;
+     border-radius:24px 24px 0 0;
+     display: flex;
+ }
+ .macwindow_action{
+     width:10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: rgb(255, 128, 0);
+     margin: 0 4px;
+ }
+ .main_box{
+     margin: auto;
+    width: 90%;
+    padding: 40px 0px;
+    background-color:var(--button_dark_secondary);
+    border-radius:0 0 24px 24px;
+}
+.blockchain_sidebar{
+    width: 22%;
+    border-right: 2px solid red;
+
+}
+.blockchain_sidebar_item{
+    color: var(--background_light_main);
+    font-weight: bold;
+    padding: 10px 16px 10px 24px;
+}
 
  
 /*TON Community*/
@@ -488,7 +520,7 @@ align-items: flex-start;
      padding-bottom: 120px;
  }
  .apps{
-     margin: 0 40%;
+     margin: 0 39%;
  }
  .appsdesc{
       text-align: center;
@@ -509,17 +541,24 @@ padding-bottom: 42px;
      justify-content: space-between;
  }
  .startmining{
-     display: flex;
-     flex-direction: column;
+     width: 30%;
+
  }
- /*not over
- .chanceslist-img{
+   /* photos effect*/
+
+ .thumbnail{
      border-radius: 32px;
+   /* width: 100%;
+    height: 148px;*/
+    background-size:100% 100%; 
+    background-position: center;
+    transition: all 0.2s;
+     aspect-ratio:16/7 ;
  }
- .chanceslist-img:hover{
-     width: 350px;
-     height: 190px;
- }*/
+ .startmining:hover .thumbnail{
+     background-size: 110% 110%;
+ }
+ 
  .chanceslist-title{
      font-weight: 800;
      font-size: larger;
@@ -528,4 +567,41 @@ padding-bottom: 42px;
  .chanceslist-desc{
      color: var( --text_light_secondary);
      font-size: large;
+ }
+
+/*footer*/
+
+ .footer2{
+     padding-top: 24px;
+ }
+ .footer_links{
+     width: 100%;
+     padding-bottom: 32px;
+     display: flex;
+     justify-content:space-between;
+     align-items: flex-start;
+    border-bottom: 2px solid var(--separator_light); 
+ }
+ .column_links{
+     width:16/6666667%;
+     display: flex;
+     flex-direction: column;
+ }
+ .footer-bold-text{
+     font-size: large;
+     font-weight: bold;
+ }
+ .footer2-link{
+     color: var( --text_light_secondary);
+ }
+ .footer2-link:hover{
+     color:var(  --button_light_primary);
+ }
+ .footer_icons{
+ padding: 24px 0;
+ display: flex;
+ justify-content: space-between;
+ }
+ .footer_coprigts_year{
+     color: var( --text_light_secondary);
  }
