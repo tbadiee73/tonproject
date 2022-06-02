@@ -62,7 +62,7 @@ nav{
 /*welcome & video*/
 
 .hero{
-    background-color: var(--background_dark_main);
+    background-color: rgb(35, 35, 40);
     color: var(--background_light_main);
 }
 .source a{
@@ -102,6 +102,16 @@ nav{
      width: 30%;
  }
  
+ .videoshadow {
+    background-color:  black;
+    padding:1% 5%;
+    position:absolute;
+    left:69%; 
+    bottom:10%;
+    border-radius: 50%;
+    filter:blur(20px);
+ }
+
  .details p{
      color: #ffffffb3;
      margin-bottom: 32px;
@@ -149,7 +159,7 @@ margin-left: 16px;
 
 /*mass adoption*/
 
-.main.container{
+.Mass-adoption.container{
     padding: 150px 0px;
 }
 .masstitle{
@@ -281,16 +291,16 @@ font-weight: 1000;
   top:8px;
 }
 
-/*timeline*/
-
 .itemtext{
    padding-bottom: 30px;
-   font-weight:550;
+   font-weight:normal;
 }
 .itemnumbers{
     font-size: xx-large;
-    font-weight: 800;
+    font-weight: bold;
 } 
+
+/*timeline*/
 
 .timeline{
     padding: 100px 0px;
@@ -314,17 +324,16 @@ font-weight: 1000;
     display: block;
     width: 66.66%;
     height: 2px;
-    background-color: red;
+    background-color:  var(  --separator_light);
     position: absolute;
     top: 0;
     left: 0;
     content: "";
 }
 .timeline-items::after{
-    display: block;
-    width: 48%;
-    
-    border-top: 3px dashed red;
+ 
+    width: 60%;
+    border-top: 3px dashed  var(  --separator_light);
     position: absolute;
     top: 0;
     left: 66.66%;
@@ -335,29 +344,31 @@ font-weight: 1000;
     font-weight:800;
     font-size:larger;
     position: relative;
+    display: inline;
+    padding-right: 14px;
    
   }
   .yearnumber::before{
-      display: block;
-      content: "";
+ 
+   content: "";
    width: 8px;
    height: 8px;
    border-radius: 50%;
-   background-color: green;
+   background-color:var( --button_dark_primary);
    transform: translateY(-50%);
+   position: absolute;
   }
-  .bigdot::before{
-      z-index: 1;
-    width: 8px;
-    height: 8px;
-      background-color: var(--background_light_main);
-      border:8px solid purple ;
-      border-radius: 50%;
+ .bigdot::before{
+   
+   background-color: var(--background_light_main);
+      outline:8px solid var( --button_dark_primary); 
+
   }
+
 
 .yeardesc{
     font-weight: normal;
-    font-size: large;
+  font-size: large;
     color: var( --text_light_secondary);
     line-height: 30px;
 }
@@ -415,10 +426,10 @@ align-items: flex-start;
     border-radius:40px;
     margin:16px 0 ;
 }
-.collink{
+.column-link{
     color: black;
 }
-.collink:hover{
+.column-link:hover{
     color:var( --button_dark_primary_hover);
 }
 .blockchine-footr{
@@ -436,16 +447,16 @@ align-items: flex-start;
 }
 /*A blockchain for developers*/
 
- .developers{
+ .blockchain-developers{
      background-color: var(--background_dark_main);
  }
  .blockchahindev{
      padding: 72px 0;
  }
- .devtitle{
+ .developers-title{
      color: var(  --background_light_main);
  }
- .devdesc{
+ .developers-desc{
      color: #ffffffb3;
      margin: 0 24%;
  }
@@ -454,37 +465,70 @@ align-items: flex-start;
      justify-content: center;
      padding-bottom: 58px;
  }
- .header_box{
+ .macwindow-header{
      width: 90%;
      padding: 24px 40px;
      background-color: rgb(41, 41, 46);
      margin: auto;
-     border-radius:24px 24px 0 0;
+     border-radius:32px 32px 0 0;
      display: flex;
  }
  .macwindow_action{
      width:10px;
      height: 10px;
      border-radius: 50%;
-     background-color: rgb(255, 128, 0);
+     background-color: #62c554;
      margin: 0 4px;
  }
- .main_box{
+ .red-point{
+     background-color:rgb(237, 106, 94) ;
+ }
+ .orange-point{
+     background-color:#f6be4f ;
+ }
+
+ .macwindow_body{
+     display: flex;
      margin: auto;
     width: 90%;
     padding: 40px 0px;
     background-color:var(--button_dark_secondary);
-    border-radius:0 0 24px 24px;
+    border-radius:0 0 32px 32px;
 }
 .blockchain_sidebar{
+    display: flex;
+    flex-direction: column;
     width: 22%;
-    border-right: 2px solid red;
+    border-right: 2px solid  rgba(255, 255, 255, 0.06);
+    padding-bottom: 50px;
 
 }
 .blockchain_sidebar_item{
     color: var(--background_light_main);
+    font-size: medium;
     font-weight: bold;
-    padding: 10px 16px 10px 24px;
+    padding: 12px 16px 12px 32px;
+    margin-bottom: 6px;
+}
+
+.selected{
+    background-color: var( --button_dark_secondary);
+    border-right:2px solid #06a1ef;
+}
+.blockchain_sidebar_item:hover{
+    background-color: var(--button_dark_secondary_pressed);
+}
+
+.blockchain_content{
+    width: 78%;
+    padding: 0 46px 92px;
+    color: aquamarine;
+}
+.body_content{
+    display: none;
+}
+.body_content.show{
+    display: block;
 }
 
  
@@ -495,16 +539,17 @@ align-items: flex-start;
  display: flex;
  padding: 64px 0;
  }
- .desccommunity{
+ .communitydesc{
      width: 55%;
  }
 
 .teltwitt{
     display: inline-flex;
-    color: rgb(0, 136, 204);
-    font-weight: 800;
-    margin: 40px 12px 0;
+    color:var( --button_dark_primary);
+    font-weight:bold;
     font-size: large;
+    margin-top:24px ;
+    margin-right: 12px;
 }
 .teltwitt:hover{
     color:  var( --button_dark_primary_hover);
@@ -514,8 +559,11 @@ align-items: flex-start;
  }
 
  /*Apps & Services*/
+ .appsbox{
+    overflow: hidden;
+ }
 
- .s4-main{
+ .Apps_Services{
      padding-top: 72px;
      padding-bottom: 120px;
  }
@@ -530,9 +578,60 @@ margin: 0 20%;
 padding-bottom: 42px;
  }
 
+
+.apps_icons{
+ display: flex;   
+ justify-content: space-between;
+}
+.apps_icons_item{
+ width: 30%;
+ 
+}
+
+.appicon{
+    width:30%;
+    border-radius: 22%;
+    position: relative;
+    filter: drop-shadow(22px 6px .7rem rgba(172, 175, 179, 0.767));
+  
+}
+.vimg{
+    right: 8%;
+    bottom: 6%;
+}
+.diamondimg{
+    top: 10%;
+}
+.wahleimg{
+    left: 8%;
+    top: 38%;
+}
+.squareimg{
+    right: 8%;
+    top: 11%;
+}
+.circlesimg{
+    top: 22%;
+}
+.rabbitimg{
+    right: 16%;
+    top: 35%;
+}
+.wimg{
+    right: 8%;
+    top: 10%;
+}
+.toniconimg{
+    left: 25%;
+    top: 22%;
+}
+.pyramidimg{
+
+top: 35%;
+}
  /*Everyone can participate*/
 
- .s5{
+ .Everyone_can_participate{
      padding:140px 0;
  }
  .chanceslist{
@@ -548,8 +647,6 @@ padding-bottom: 42px;
 
  .thumbnail{
      border-radius: 32px;
-   /* width: 100%;
-    height: 148px;*/
     background-size:100% 100%; 
     background-position: center;
     transition: all 0.2s;
@@ -571,21 +668,19 @@ padding-bottom: 42px;
 
 /*footer*/
 
- .footer2{
-     padding-top: 24px;
- }
  .footer_links{
      width: 100%;
      padding-bottom: 32px;
      display: flex;
      justify-content:space-between;
-     align-items: flex-start;
-    border-bottom: 2px solid var(--separator_light); 
+    border-bottom: 2px solid var(--separator_light);
+  
  }
  .column_links{
-     width:16/6666667%;
+     width:16.6666667%;
      display: flex;
      flex-direction: column;
+    
  }
  .footer-bold-text{
      font-size: large;
@@ -593,14 +688,21 @@ padding-bottom: 42px;
  }
  .footer2-link{
      color: var( --text_light_secondary);
+     padding: 8px 0;
+   
  }
  .footer2-link:hover{
      color:var(  --button_light_primary);
  }
  .footer_icons{
- padding: 24px 0;
+ padding-top: 20px;
+ padding-bottom: 48px;
  display: flex;
  justify-content: space-between;
+ }
+ 
+ .network_icon{
+     padding-left: 6px;
  }
  .footer_coprigts_year{
      color: var( --text_light_secondary);
