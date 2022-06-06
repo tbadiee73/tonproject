@@ -20,11 +20,11 @@
          <div class="container">
          <a href="#" class="logo"><img src="./assets/logos/logo-with-name.svg"></a>
          <div class="link">
-             <div>Use TON</div>
-             <div>Learn</div>
-             <div>Developers</div>
-             <div>Community</div>
-             <div>Tools</div>
+             <a href="#">Use TON</a>
+             <a href="#">Learn</a>
+             <a href="#">Developers</a>
+             <a href="#">Community</a>
+             <a href="#">Tools</a>
          </div>
          <div class="source"><a href="https://github.com/ton-blockchain" target="_blank"><img class="icon" src="./assets/logos/github.svg">GitHub</a></div>
         </div>
@@ -44,7 +44,7 @@
     </div>
     <div class="video">
         <video autoplay loop muted src="./videos/dimond_1_VP9.29bcaf8e.webm" width="100%"></video></div>
-        <div class="videoshadow"></div>
+        
 </div>
  </section>
  <section class="Mass-adoption container">
@@ -111,14 +111,44 @@
        <a class="more button" href="https://ton.org/analysis"> <img src="./assets/icons/learn-more.svg" >Learn more</a></span> 
         </div>
        <div class="blockchin-analysis">
-        <div class="column1 analysis "><h4 style="background-color:red ;">Block time</h4><h4>Time-to-finality</h4><h4>Simple transaction<br/>performance</h4><h4>Complex transaction<br/>performance</h4><h4>Sharding support</h4><h4>Cross-shard 
-            <br/>communication</h4></div>
-        <div class="column2 analysis"><img src="./assets/logos/logo.svg"><h4> TON</h4><span>5 sec.</span><span>Under 1 sec.</span><span>High</span><span>High</span><span>Max. 2<sup>60</sup> shards<br/>per workchain</span><span>Near-instant</span></div>
-        <div class="column3 analysis"><img src="./assets/logos/ether.svg" > <h4> Ethereum 2.0</h4><span>12 sec.</span><a class="column-link" href="https://ethos.dev/beacon-chain/" target="_blank">10-15 min.</a><span>Potentially high</span><span>Low</span><span>Max. 2<sup>6</sup> shards</span><span>Slow time-to-finality</span></div>
-        <div class="column4 analysis"><img src="./assets/logos/solana.svg"> <h4>Solana</h4><span>1 sec.</span><span>6.4 sec.</span><span>high</span><a class="column-link" href="https://decrypt.co/91117/solana-user-experience-not-what-it-should-be-co-founder-anatoly"> Very low</a><span>None</span><span>None</span></div>
+        <div class="column_analysis ">
+            <h4>Block time</h4>
+            <h4>Time-to-finality</h4>
+            <h4>Simple transactionperformance</h4>
+            <h4>Complex transaction performance</h4>
+            <h4>Sharding support</h4>
+            <h4>Cross-shard 
+            <br/>communication</h4>
+        </div>
+        <div class="column_analysis">
+            <span><img src="./assets/logos/logo.svg"></br><b> TON </b></span>
+            <span>5 sec.</span>
+            <span>Under 1 sec.</span>
+            <span>High</span>
+            <span>High</span>
+            <span>Max. 2<sup>60</sup> shards<br/>per workchain</span>
+            <span>Near-instant</span>
+        </div>
+        <div class="column_analysis">
+            <span><img src="./assets/logos/ether.svg" ></br> <b>  Ethereum 2.0 </b></span>
+            <span>12 sec.</span>
+            <a class="column-link" href="https://ethos.dev/beacon-chain/" target="_blank">10-15 min.</a>
+            <span>Potentially high</span>
+            <span>Low</span><span>Max. 2<sup>6</sup> shards</span>
+            <span>Slow time-to-finality</span>
+        </div>
+        <div class="column_analysis">
+            <span><img src="./assets/logos/solana.svg"></br> <b> Solana </b></span>
+            <span>1 sec.</span>
+            <span>6.4 sec.</span>
+            <span>high</span>
+            <a class="column-link" href="https://decrypt.co/91117/solana-user-experience-not-what-it-should-be-co-founder-anatoly"> Very low</a>
+            <span>None</span>
+            <span>None</span>
+        </div>
        </div>
-       <footer class="blockchine-footr">  
-        Disclaimer: Please note that as with all technical comparisons, context is important when interpreting the table numbers.
+       <footer class="blockchine-footr">
+<b>         Disclaimer: Please note that as with all technical comparisons, context is important when interpreting the table numbers.
         Refer to <a class="footlink" href="https://ton.org/analysis" target="_blank">blockchain analysis</a>for more information.
        </footer>
     </div>
@@ -141,52 +171,57 @@
          </div>
          <div class="macwindow_body">
              <div class="blockchain_sidebar">
-                 <a  class="blockchain_sidebar_item">Actor model</a>
-                 <a   class="blockchain_sidebar_item">Virtual machine</a>
-                 <a   class="blockchain_sidebar_item">External messaging</a>
-                 <a   class="blockchain_sidebar_item">FunC</a>
-                 <a  class="blockchain_sidebar_item">Fully universal</a>
-                 <a   class="blockchain_sidebar_item">Libraries</a>
-                 <a   class="blockchain_sidebar_item">Currencies</a>
+                 <a href="#" class="blockchain_sidebar_item">Actor model</a>
+                 <a href="#"  class="blockchain_sidebar_item">Virtual machine</a>
+                 <a href="#"  class="blockchain_sidebar_item">External messaging</a>
+                 <a href="#"  class="blockchain_sidebar_item">FunC</a>
+                 <a href="#" class="blockchain_sidebar_item">Fully universal</a>
+                 <a href="#"  class="blockchain_sidebar_item">Libraries</a>
+                 <a href="#"  class="blockchain_sidebar_item">Currencies</a>
               
              </div>
              <div class="blockchain_content">
                  <div class="body_content">
                 <h2> Actor model</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+               <p class="body_description_style"> The <a href="#" style="color:#08c ;">actor model</a> is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
                </p>
             </div>
             <div class="body_content">
-                <h2>222222222</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2>Virtual machine</h2>
+               <p>
+                The TON Virtual Machine (TVM) is a deterministic, fully-featured stack based virtual machine. TVM is used to execute smart contracts on the TON blockchain. It's simple to work with and executes and stores code efficiently.
                </p>
             </div>   
             <div class="body_content">
-                <h2> 3333333333</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2> External messaging</h2>
+               <p>The TON blockchain and the contracts it hosts can receive external messages — from other blockchains and the web in general. This means that one can send a message to a TON smart contract without having an on-chain account, and smart contracts can process and utilize external data for on-chain operations.
                </p>
             </div>  
              <div class="body_content">
-                <h2> 4444444</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2>FunC</h2>
+               <p>
+                Meet FunC, a domain-specific statically typed programming language for TON Virtual Machine, and in particular writing smart contracts on the TON blockchain. A standard library, stdlib.fc, will help you get started with FunC
                </p>
             </div>
              <div class="body_content">
-                <h2> 55555555555</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2>Fully universal</h2>
+               <p>
+                TON's architecture means any network account can hold a balance, as well as host code and data. In TON, even a simple wallet is a smart contract. This kind of universality allows developers to do whatever they'd like. One example - one could even write a smart contract that's able to change its own code according to certain input data or static rules.
                </p>
             </div> 
             <div class="body_content">
-                <h2>666666666</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2>Libraries</h2>
+               <p>
+                Tonlib, the native client library of TON, has a number of unusual features. Not only does tonlib receive data from the blockchain, but it also checks the validity of data using Merkle-proofs. In this way, TON developers can use untrusted, external endpoints in interacting with the TON blockchain while knowing that the transaction remains secure.
                </p>
             </div>
             <div class="body_content">
-                <h2> 77777777</h2>
-               <p> The <a href="#">actor model</a>is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.
+                <h2>Currencies</h2>
+               <p>
+                Out of the box, TON supports smart-contract tokens and up to 2<sup>32</sup> native «extra-currencies».
                </p>
             </div> 
-               <a href="#">Read more <img src="./assets/icons/chevron-rightblue.svg"></a>
+               <a href="#"  class="read_more">Read more <img src="./assets/icons/chevron-rightblue.svg"></a>
             </div>
          </div>
      </div>
@@ -197,31 +232,33 @@
         <div class="communitydesc">
             <h2 class="cointitle">TON Community</h2>
             <p class="coindesc">Starting 2020, TON has grown thanks to the tireless efforts of a worldwide decentralized community of crypto enthusiasts, developers, designers, and other professionals. Our community is the key to TON's future, and we'd love for you to join us.</p>
-            <a class="teltwitt" href="https://t.me/toncoin" target="_blank"><img src="./assets/icons/telegram.svg"> Telegram</a>
-            <a class="teltwitt" href="https://twitter.com/ton_blockchain" target="_blank"><img src="./assets/logos/twitter.svg"> Twitter</a>
+           <div class="teltwitt">
+            <a  href="https://t.me/toncoin" target="_blank"><img src="./assets/icons/telegram.svg"> Telegram</a>
+            <a href="https://twitter.com/ton_blockchain" target="_blank"><img src="./assets/logos/twitter.svg"> Twitter</a>
+        </div>
         </div>
         <div class="imgcommunity"><img src="./assets/images/duck.40264b49.png" width="100%"></div>
     </div>
 </section>
-<section class=" coinbox appsbox">
+<section class="appsbox">
     <div class="Apps_Servicesi container">
      <h2 class="masstitle">Apps & Services</h2>
      <p class="appsdesc">Discover the world of apps built on TON. They're convenient, user-friendly, and perfect for those just joining the world of crypto.</p>
      <a class="more button apps" href="https://ton.app/" target="_blank"><img src="./assets/icons/apps.svg"> All Apps & Services</a>
     </div> 
-    <div class="apps_icons container">
-      <div class="apps_icons_item">
-        <img  class="appicon vimg" src="./assets/app-icons/app_1.1c26040b.png" >
-        <img class="appicon diamondimg"  src="./assets/app-icons/app_2.8d72c408.png" >
-        <img class="appicon wahleimg"  src="./assets/app-icons/app_3.8c8e6665.png" >
-        <img class="appicon squareimg"  src="./assets/app-icons/app_4.f4661c33.png" >
-        <img  class="appicon circlesimg" src="./assets/app-icons/app_5.c623915b.png" >
+    <div class="app-imgs">
+      <div class="logo-container">
+        <img  id="vimg" src="./assets/app-icons/app_1.1c26040b.png" >
+        <img id="diamondimg"  src="./assets/app-icons/app_2.8d72c408.png" >
+        <img id="wahleimg"  src="./assets/app-icons/app_3.8c8e6665.png" >
+        <img id="squareimg"  src="./assets/app-icons/app_4.f4661c33.png" >
+        <img  id="circlesimg" src="./assets/app-icons/app_5.c623915b.png" >
       </div>  
-      <div class="apps_icons_item">
-        <img class="appicon rabbitimg" src="./assets/app-icons/app_6.0fae114f.png" >
-        <img class="appicon wimg" src="./assets/app-icons/app_7.c83f2653.png" >
-        <img class="appicon pyramidimg" src="./assets/app-icons/app_8.8b779dd0.png" >
-        <img class="appicon toniconimg" src="./assets/app-icons/app_9.6cc8bad3.png" >
+      <div id="app-imgs">
+        <img id="rabbitimg" src="./assets/app-icons/app_6.0fae114f.png" >
+        <img id="wimg" src="./assets/app-icons/app_7.c83f2653.png" >
+        <img id="pyramidimg" src="./assets/app-icons/app_8.8b779dd0.png" >
+        <img id="toniconimg" src="./assets/app-icons/app_9.6cc8bad3.png" >
 
       </div>  
     </div>

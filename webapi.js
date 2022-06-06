@@ -23,7 +23,11 @@ content_element[0].classList.add("show");
 
 sidebar_element.forEach(function sidebar_iterator(item , index) {
 
+  
+
 item.addEventListener("click",function onclick(event) {
+   
+    event.preventDefault();
 
     sidebar_element.forEach(function remove_element(element) {
         element.classList.remove("selected")
