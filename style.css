@@ -1,6 +1,6 @@
    @import "./theme.css";
 
-   *, *::after, *::after{
+   *, *::before, *::after{
        box-sizing: border-box
    }
    a{
@@ -612,39 +612,40 @@ padding-bottom: 42px;
 }
 #vimg {
     top: -10px ;
+    left: 50px;
 }
 #diamondimg {
     top: 16px;
-  left: 30px;
+  left: 70px;
 }
 #wahleimg {
     top: 70px;
-    left: 50px;
+    left: 92px;
 }
 #squareimg {
     top: 125px;
-    left: -310px
+    left: -260px
 }
 #circlesimg {
     top: 150px;
-    left: -283px;
+    left: -242px;
 }
 #rabbitimg {
     top: -25px;
-    left: 730px;
+    left: 680px;
 }
 #wimg {
-    left: 750px;
+    left: 710px;
     top: -90px;
 }
 #pyramidimg{
     top: -25px;
-  left: 778px;
+  left: 752px;
 }
 #toniconimg {
 
     top: 47px;
-    left: 542px;
+    left: 505px;
 }
 
 
